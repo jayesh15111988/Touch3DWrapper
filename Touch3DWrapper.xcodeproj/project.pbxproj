@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		E3D3DC361E7EFEB200599073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3DC351E7EFEB200599073 /* AppDelegate.swift */; };
-		E3D3DC381E7EFEB200599073 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3DC371E7EFEB200599073 /* ViewController.swift */; };
 		E3D3DC3B1E7EFEB200599073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D3DC391E7EFEB200599073 /* Main.storyboard */; };
 		E3D3DC3D1E7EFEB200599073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3D3DC3C1E7EFEB200599073 /* Assets.xcassets */; };
 		E3D3DC401E7EFEB200599073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D3DC3E1E7EFEB200599073 /* LaunchScreen.storyboard */; };
 		E3D3DC4B1E7EFEB200599073 /* Touch3DWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3DC4A1E7EFEB200599073 /* Touch3DWrapperTests.swift */; };
+		E3D3DC681E7F0A0300599073 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3DC661E7F0A0300599073 /* ImageViewController.swift */; };
+		E3D3DC691E7F0A0300599073 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3DC671E7F0A0300599073 /* ViewController.swift */; };
+		E3D3DC6E1E7F0A0C00599073 /* djoko.png in Resources */ = {isa = PBXBuildFile; fileRef = E3D3DC6A1E7F0A0C00599073 /* djoko.png */; };
+		E3D3DC6F1E7F0A0C00599073 /* federer.png in Resources */ = {isa = PBXBuildFile; fileRef = E3D3DC6B1E7F0A0C00599073 /* federer.png */; };
+		E3D3DC701E7F0A0C00599073 /* nadal.png in Resources */ = {isa = PBXBuildFile; fileRef = E3D3DC6C1E7F0A0C00599073 /* nadal.png */; };
+		E3D3DC711E7F0A0C00599073 /* wawrinka.png in Resources */ = {isa = PBXBuildFile; fileRef = E3D3DC6D1E7F0A0C00599073 /* wawrinka.png */; };
+		E3D3DC741E7F0A1600599073 /* Touch3DPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3DC721E7F0A1600599073 /* Touch3DPreviewViewController.swift */; };
+		E3D3DC751E7F0A1600599073 /* Touch3DWrapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3DC731E7F0A1600599073 /* Touch3DWrapperProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +35,6 @@
 /* Begin PBXFileReference section */
 		E3D3DC321E7EFEB200599073 /* Touch3DWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Touch3DWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D3DC351E7EFEB200599073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3D3DC371E7EFEB200599073 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E3D3DC3A1E7EFEB200599073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3D3DC3C1E7EFEB200599073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3D3DC3F1E7EFEB200599073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +42,14 @@
 		E3D3DC461E7EFEB200599073 /* Touch3DWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Touch3DWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D3DC4A1E7EFEB200599073 /* Touch3DWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch3DWrapperTests.swift; sourceTree = "<group>"; };
 		E3D3DC4C1E7EFEB200599073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3D3DC661E7F0A0300599073 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = Demo/ImageViewController.swift; sourceTree = "<group>"; };
+		E3D3DC671E7F0A0300599073 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Demo/ViewController.swift; sourceTree = "<group>"; };
+		E3D3DC6A1E7F0A0C00599073 /* djoko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = djoko.png; path = Images/djoko.png; sourceTree = "<group>"; };
+		E3D3DC6B1E7F0A0C00599073 /* federer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = federer.png; path = Images/federer.png; sourceTree = "<group>"; };
+		E3D3DC6C1E7F0A0C00599073 /* nadal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nadal.png; path = Images/nadal.png; sourceTree = "<group>"; };
+		E3D3DC6D1E7F0A0C00599073 /* wawrinka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wawrinka.png; path = Images/wawrinka.png; sourceTree = "<group>"; };
+		E3D3DC721E7F0A1600599073 /* Touch3DPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Touch3DPreviewViewController.swift; path = Source/Touch3DPreviewViewController.swift; sourceTree = "<group>"; };
+		E3D3DC731E7F0A1600599073 /* Touch3DWrapperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Touch3DWrapperProtocol.swift; path = Source/Touch3DWrapperProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +91,10 @@
 		E3D3DC341E7EFEB200599073 /* Touch3DWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				E3D3DC651E7F09C200599073 /* Demo */,
+				E3D3DC5A1E7EFF2B00599073 /* Images */,
+				E3D3DC551E7EFEB700599073 /* Source */,
 				E3D3DC351E7EFEB200599073 /* AppDelegate.swift */,
-				E3D3DC371E7EFEB200599073 /* ViewController.swift */,
 				E3D3DC391E7EFEB200599073 /* Main.storyboard */,
 				E3D3DC3C1E7EFEB200599073 /* Assets.xcassets */,
 				E3D3DC3E1E7EFEB200599073 /* LaunchScreen.storyboard */,
@@ -94,6 +110,35 @@
 				E3D3DC4C1E7EFEB200599073 /* Info.plist */,
 			);
 			path = Touch3DWrapperTests;
+			sourceTree = "<group>";
+		};
+		E3D3DC551E7EFEB700599073 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E3D3DC721E7F0A1600599073 /* Touch3DPreviewViewController.swift */,
+				E3D3DC731E7F0A1600599073 /* Touch3DWrapperProtocol.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		E3D3DC5A1E7EFF2B00599073 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E3D3DC6A1E7F0A0C00599073 /* djoko.png */,
+				E3D3DC6B1E7F0A0C00599073 /* federer.png */,
+				E3D3DC6C1E7F0A0C00599073 /* nadal.png */,
+				E3D3DC6D1E7F0A0C00599073 /* wawrinka.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E3D3DC651E7F09C200599073 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E3D3DC661E7F0A0300599073 /* ImageViewController.swift */,
+				E3D3DC671E7F0A0300599073 /* ViewController.swift */,
+			);
+			name = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +227,10 @@
 				E3D3DC401E7EFEB200599073 /* LaunchScreen.storyboard in Resources */,
 				E3D3DC3D1E7EFEB200599073 /* Assets.xcassets in Resources */,
 				E3D3DC3B1E7EFEB200599073 /* Main.storyboard in Resources */,
+				E3D3DC6E1E7F0A0C00599073 /* djoko.png in Resources */,
+				E3D3DC701E7F0A0C00599073 /* nadal.png in Resources */,
+				E3D3DC711E7F0A0C00599073 /* wawrinka.png in Resources */,
+				E3D3DC6F1E7F0A0C00599073 /* federer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3D3DC381E7EFEB200599073 /* ViewController.swift in Sources */,
+				E3D3DC741E7F0A1600599073 /* Touch3DPreviewViewController.swift in Sources */,
+				E3D3DC691E7F0A0300599073 /* ViewController.swift in Sources */,
+				E3D3DC681E7F0A0300599073 /* ImageViewController.swift in Sources */,
+				E3D3DC751E7F0A1600599073 /* Touch3DWrapperProtocol.swift in Sources */,
 				E3D3DC361E7EFEB200599073 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
