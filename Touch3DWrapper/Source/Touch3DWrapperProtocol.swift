@@ -8,6 +8,7 @@
 
 import UIKit
 
-protocol LongPressRecognizerProtocol {
+protocol Touch3DRecognizerProtocol {
     func actionItems() -> [UIPreviewActionItem]
+    func locationFrom(point: CGPoint, in view: UIScrollView) -> CGPoint
 }

@@ -39,17 +39,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension ViewController: UIViewControllerPreviewingDelegate, LongPressRecognizerProtocol {
+extension ViewController: UIViewControllerPreviewingDelegate {
     public func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
 
         if let _ = self.presentedViewController as? Touch3DPreviewViewController {
             return nil
         }
 
-        var updatedLocation = self.view.convert(location, to: self.tableView)
-        updatedLocation = CGPoint(x: updatedLocation.x, y: updatedLocation.y + self.tableView.contentOffset.y)
+        let finalLocation = self.locationFrom(point: location, in: self.tableView)
 
-        if let indexPath = tableView.indexPathForRow(at: updatedLocation), let cell = self.tableView.cellForRow(at: indexPath) {
+        if let indexPath = tableView.indexPathForRow(at: finalLocation), let cell = self.tableView.cellForRow(at: indexPath) {
             self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: .none)
             previewingContext.sourceRect = CGRect(x: cell.frame.origin.x, y: cell.frame.origin.y, width: cell.bounds.width, height: cell.bounds.height)
             let selectedPlayerNameString = self.playersList[indexPath.row].rawValue
@@ -76,7 +75,9 @@ extension ViewController: UIViewControllerPreviewingDelegate, LongPressRecognize
             }
         }
     }
+}
 
+extension ViewController: Touch3DRecognizerProtocol {
     func actionItems() -> [UIPreviewActionItem] {
         let addToCartAction = UIPreviewAction(title: "Perform Action 1", style: .default) { (action, controller) in
             print("Action 1 performed")
@@ -92,8 +93,15 @@ extension ViewController: UIViewControllerPreviewingDelegate, LongPressRecognize
 
         let actionGroup = UIPreviewActionGroup(title: "More Actions", style: .default, actions: [addToCartAction, addToIdeaboardAction, action2])
 
-        let finalArray = NSArray.init(object: actionGroup)
-        return finalArray as! [UIPreviewActionItem]
+        if let finalArray = NSArray.init(object: actionGroup) as? [UIPreviewActionItem] {
+            return finalArray
+        }
+        return []
+    }
+
+    func locationFrom(point: CGPoint, in view: UIScrollView) -> CGPoint {
+        let location = self.view.convert(point, to: view)
+        return CGPoint(x: location.x, y: location.y + view.contentOffset.y)
     }
 }
 
